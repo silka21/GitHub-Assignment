@@ -2,10 +2,33 @@
     <head>
         <meta charset = "utf-8"> 
         <title>Cats&Dogs</title>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            .column {
+              float: left;
+              width: 50%;
+              padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+        </style>
     </head>
     <body>
+     <div class="row">
+       <div class="column">
+        <img src= "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgreatinspire.com%2Fwp-content%2Fuploads%2F2012%2F11%2FCute-puppy-photos-39.jpg&f=1&nofb=1" 
+             width="600px" height="500px"/></div>
+       <div class="column"> 
         <img src= "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F_dedcXqzPdxo%2FTRTkwvgijKI%2FAAAAAAAABt4%2FSRz-CDS30F0%2Fs1600%2FCat_pictures2.jpg&f=1&nofb=1" 
-        width="600px" height="500px"/>
-
+             width="600px" height="500px"/></div>
+     </div>
     </body>
 </html>
